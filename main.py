@@ -7,7 +7,7 @@ readC = pd.read_csv("UKPD.csv")
 def maps():
     url = "https://geocode.search.hereapi.com/v1/geocode?q=5+Rue+Daunou%2C+75000+Paris%2C+France"
     # apiKey from scalefusion
-    apiKey = "K8YcUVejo63NsYB3-Xg2cwR_SE71Hp32jQOodJiDBZw"
+    apiKey = yourApiKey
     header = {'Authorization': 'Bearer ' + apiKey}
 
     result = requests.get(url, headers=header)
